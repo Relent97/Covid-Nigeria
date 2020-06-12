@@ -68,8 +68,7 @@ Table2["Total Active Cases"] = Table2["Total Confirmed Cases"] - (Table2["Total 
 S = pd.read_excel("Data.xlsx")
 df = pd.DataFrame(S)
 df.replace(np.nan,0, inplace = True)
-df = df[['Date', 'State', 'NUMBER OF TESTS DONE',' NEW CONFIRMED CASES','TOTAL Confirmed Cases', 'NEW ADMITTED CASES','TOTAL ACTIVE CASES','NEW DISCHARGED CASES','TOTAL DISCHARGED',
-'NEW DEATHS','TOTAL DEATHS','DAY LAST CASE']]
+
 
 
 df["Month"] = df["Date"].dt.month
